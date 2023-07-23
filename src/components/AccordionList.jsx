@@ -34,11 +34,13 @@ const AccordionList = (props) => {
               )}
             </div>
           </div>
-          {activeTab === props.id ? (
+          {activeTab === props.id ?
+            (
             <div className='w-[400px] md:w-[500px] mx-auto border border-t-0 border-slate-100 rounded-b-lg px-3 py-4 '>
               <p>{props.text}</p>
             </div>
-          ) : null}
+            ) :
+            null}
         </div>
       </>
     )
